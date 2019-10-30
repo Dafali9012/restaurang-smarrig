@@ -1,33 +1,34 @@
-* {
-    color: white;
-}
-
 body {
     height: 100vh;
+    background: #88d969;
 }
 
 a {
+    z-index: 100;
+    color: white;
+}
+
+a:hover {
     color: white;
 }
 
 #nav-container {
     position: fixed;
     height: 6vh;
-    z-index: 10;
+    background: linear-gradient(to right, #1d800e, #88d969, #46cb18, #06a10b);
+    border-bottom: 2px solid #1d800e;
+    z-index: 100;
 }
 
-#nav-row {
-    height: 100%;
+#nav-container .links {
+    height: 6vh;
+    text-shadow: 1px 1px black;
 }
 
-#selected {
-    height: 50px;
+#nav-container .links>img {
     position: absolute;
-    pointer-events: none;
-}
-
-.links {
-    position: relative;
+    height: 6vh;
+    z-index: 50;
 }
 
 #banner-container {  
@@ -35,53 +36,63 @@ a {
 }
 
 #banner {
-    background-image: url("https://assets.bonappetit.com/photos/5d7284758d926f0009df5cfc/16:9/w_2560%2Cc_limit/Basically-Gojuchang-Chicken-Potato.jpg");
+    /*background-image: url("https://natrahedge.com/wp-content/uploads/2016/02/natrahedge-expandable-ficus-leaf-lattice-featured.png");
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-colored-mosaic-leaves-through-the-lattice-window-background-image_56147.jpg");*/
+    background-image: url("http://kenyafresh.co.ke/wp-content/uploads/2018/09/BN-VZ142_ball_GR_20171105084239-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     position: relative;
+    top: 6vh;
     display: flex;
     justify-content: center;
 }
 
 #banner>p {
     position: absolute;
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 50px;
-    text-shadow:2px 2px black;
-    left: auto;
-    right:auto;
-    top: 40%;
+    font-family: 'La Belle Aurore', bold;
+    font-size: 10vmin;
+    top: 30%;
+    color: white;
+    user-select: none;
+    text-shadow: 2px 2px black;
+}
+
+#text-container>.row>.text {
+    top: 6vh;
+    background: rgba(255,255,255,.35);
+    min-height: 34vh;
+    color: black;
+    text-align: center;
+    padding: 0 10%;
+}
+
+#text-container>.row>.text>p:first-child {
+    font-size: 4vmin;
+}
+
+#text-container>.row>.text>p:not(:first-child) {
+    margin-bottom: 5%;
+    font-size: 2vmin;
+}
+
+.about>p:nth-child(3){
+    padding: 0 20%;
 }
 
 #about-sections>.row {
     height: 100vh;
 }
 
-#about-sections img {
-    border-radius: 50%;
-}
-
 #about-sections>.row>* {
     text-align: center;
 }
 
-.profile-pic {
-    margin-top: 15%;
-}
-
-#about-one {
-    background: crimson;
-}
-
-#about-two {
-    background: lime;
-
-}
-
-#about-three {
-    background: indigo;
+#about-sections img {
+    width: 15vw;
+    margin-top: 35%;
+    border-radius: 50%;
 }
 
 #about-sections p {
@@ -89,6 +100,5 @@ a {
 }
 
 #gallery-container {
-    background: crimson;
     height: 100vh;
 }
