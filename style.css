@@ -1,5 +1,5 @@
 a {
-    color: white;
+    color: black;
 }
 
 #nav-container {
@@ -8,4 +8,13 @@ a {
 
 #nav-row {
     height: 100%;
+}
+
+#selected {
+    height: 50px;
+    position: absolute;
+}
+
+.links {
+    position: relative;
 }
