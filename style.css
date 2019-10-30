@@ -1,9 +1,19 @@
+* {
+    color: white;
+}
+
+body {
+    height: 100vh;
+}
+
 a {
-    color: black;
+    color: white;
 }
 
 #nav-container {
-    height: 50px;
+    position: fixed;
+    height: 6vh;
+    z-index: 10;
 }
 
 #nav-row {
@@ -17,4 +27,67 @@ a {
 
 .links {
     position: relative;
+}
+
+#banner {
+    background-image: url("https://assets.bonappetit.com/photos/5d7284758d926f0009df5cfc/16:9/w_2560%2Cc_limit/Basically-Gojuchang-Chicken-Potato.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    height:100%;
+    position: relative;
+    
+}
+
+#banner>p {
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 50px;
+    text-shadow:2px 2px black;
+    left: 5%;
+    top: 15%;
+}
+
+#banner-container {
+    /*height: 64vh;*/
+    height: 100vh;
+}
+
+#about-sections>.row {
+    height: 100vh;
+}
+
+#about-sections img {
+    
+    border-radius: 50%;
+}
+
+#about-sections>.row>* {
+    text-align: center;
+}
+
+.profile-pic {
+    margin-top: 15%;
+}
+
+#about-one {
+    background: crimson;
+}
+
+#about-two {
+    background: lime;
+
+}
+
+#about-three {
+    background: indigo;
+}
+
+#about-sections p {
+    margin-top: 5%;
+}
+
+#gallery-container {
+    background: crimson;
+    height: 100vh;
 }
