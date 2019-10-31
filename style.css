@@ -62,10 +62,6 @@ a:hover {
     text-shadow: 2px 2px black;
 }
 
-#text-container {
-   
-}
-
 #text-container>.row>.text {
     background: rgba(255,255,255,.35);
     min-height: 34vh;
