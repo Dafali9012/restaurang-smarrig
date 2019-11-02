@@ -22,9 +22,9 @@ a:hover {
 }
 
 #nav-container .links {
+    font-size: calc(12px + 0.5vw);
     height: 6vh;
     text-shadow: 1px 1px black;
-    font-size: 1.5vmin;
     background: #86c232;
     border-radius: 0 0 25px 25px;
 }
@@ -41,7 +41,6 @@ a:hover {
 
 #banner-container {  
     height: 30vw;
-    /*overflow: hidden;*/
 }
 
 #banner {
@@ -59,7 +58,6 @@ a:hover {
     position: absolute;
     font-family: 'Pacifico', cursive;
     font-size: 5vw;
-    /*top: 70%;*/
     left: 17%;
     bottom: 0;
     color: white;
@@ -69,7 +67,6 @@ a:hover {
 
 #text-container>.row>.text {
     background: #474b4f;
-    min-height: 60vh;
     color: rgb(200,200,200);
     text-align: center;
     padding: 0 5vmax;
@@ -77,26 +74,30 @@ a:hover {
 }
 
 #text-container>.row>.text>p:first-child {
-    font-size: 4vmin;
+    font-size: calc(18px + 0.5vw);
     font-weight: bold;
+    color: #86c232;
 }
 
 #text-container>.row>.text>p:not(:first-child) {
     margin-bottom: 5%;
-    font-size: 2vmin;
+    font-size: calc(12px + 0.5vw);
 }
 
 #about-sections {
     padding: 0 10%;
     color: rgb(200,200,200);
+    
 }
 
 .about>p:nth-child(2){
     font-weight: bold;
+    font-size: 24px;
 }
 
 .about>p:nth-child(3){
     padding: 0 10%;
+    border: 2px solid crimson;
 }
 
 #about-sections>.row {
@@ -110,16 +111,16 @@ a:hover {
 }
 
 #about-sections img {
-    width: 15vw;
+    width: 20vw;
     border-radius: 50%;
 }
 
 #about-sections p {
     margin-top: 5%;
-    font-size: 2vmin;
+    font-size: calc(12px + 0.5vw);
 }
 
 #gallery-container {
-    top: 10vh;  
+    top: 10vh;
     min-height: 100vh;
 }
