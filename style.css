@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background: linear-gradient(to top, burlywood, burlywood,burlywood, #c4aa52);
+    background: #222629;
 }
 
 a {
@@ -16,15 +16,17 @@ a:hover {
     opacity: 1;
     font-family: 'Roboto', sans-serif;
     position: fixed;
-    height: 6vh;
-    background: linear-gradient(to right, #1d800e, #88d969, #46cb18, #06a10b);
-    border-bottom: 2px solid #1d800e;
+    height: 3vh;
+    background: #86c232;
     z-index: 100;
 }
 
 #nav-container .links {
     height: 6vh;
     text-shadow: 1px 1px black;
+    font-size: 1.5vmin;
+    background: #86c232;
+    border-radius: 0 0 25px 25px;
 }
 
 #nav-container .links>img {
@@ -38,12 +40,12 @@ a:hover {
 }
 
 #banner-container {  
-    height: 60vh;
+    height: 30vw;
     /*overflow: hidden;*/
 }
 
 #banner {
-    background-image: url("http://kenyafresh.co.ke/wp-content/uploads/2018/09/BN-VZ142_ball_GR_20171105084239-2.jpg");
+    background-image: url("restaurant.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,31 +57,42 @@ a:hover {
 
 #banner>p {
     position: absolute;
-    font-family: 'La Belle Aurore', bold;
-    font-size: 10vmin;
-    top: 30%;
+    font-family: 'Pacifico', cursive;
+    font-size: 5vw;
+    /*top: 70%;*/
+    left: 17%;
+    bottom: 0;
     color: white;
+    text-shadow: 1px 1px black;
     user-select: none;
-    text-shadow: 2px 2px black;
 }
 
 #text-container>.row>.text {
-    background: rgba(255,255,255,.35);
-    min-height: 34vh;
-    color: black;
+    background: #474b4f;
+    min-height: 60vh;
+    color: rgb(200,200,200);
     text-align: center;
-    padding: 0 5%;
+    padding: 0 5vmax;
     font-family: 'Roboto', sans-serif;
 }
 
 #text-container>.row>.text>p:first-child {
     font-size: 4vmin;
+    font-weight: bold;
 }
 
 #text-container>.row>.text>p:not(:first-child) {
     margin-bottom: 5%;
     font-size: 2vmin;
-    
+}
+
+#about-sections {
+    padding: 0 10%;
+    color: rgb(200,200,200);
+}
+
+.about>p:nth-child(2){
+    font-weight: bold;
 }
 
 .about>p:nth-child(3){
