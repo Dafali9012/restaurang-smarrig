@@ -150,8 +150,10 @@ a:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    /*margin: 10px;*/
-    /*border: 2px solid crimson;*/
+}
+
+#gallery-container>.row>section:hover>section {
+    bottom: 0;
 }
 
 .description {
