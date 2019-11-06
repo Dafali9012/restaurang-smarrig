@@ -51,10 +51,10 @@ a:hover {
 
 #heading .text {
     font-family: 'Pacifico', cursive;
-    font-size: 4vw;
+    font-size: 4vmax;
     user-select: none;
     color: white;
-    margin: 3rem 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -68,10 +68,10 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 #banner>p {
@@ -163,10 +163,4 @@ a:hover {
 
 .description p {
     margin: 1rem 0;
-}
-
-@media screen and (max-width: 575px) {
-    #heading .text {
-        margin: 4rem 0;
-    }
 }
